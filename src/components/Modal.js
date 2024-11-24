@@ -116,12 +116,16 @@ export const Modal = ({ open, setOpen, selectedData, type = "add" }) => {
           rules={[{ required: true, message: "Please enter Bookmark Type" }]}
         >
           <Select placeholder="Select Bookmark Type">
-            <Select.Option value="python">Python</Select.Option>
             <Select.Option value="java">Java</Select.Option>
-            <Select.Option value="javascript">JavaScript</Select.Option>
+            <Select.Option value="javascript">Javascript</Select.Option>
+            <Select.Option value="python">Python</Select.Option>
             <Select.Option value="typescript">TypeScript</Select.Option>
-            <Select.Option value="project">Project</Select.Option>
+            <Select.Option value="react">React</Select.Option>
+            <Select.Option value="server">Server</Select.Option>
+            <Select.Option value="nextjs">Next Js</Select.Option>
+            <Select.Option value="nestjs">Nest Js</Select.Option>
             <Select.Option value="other">Other</Select.Option>
+            <Select.Option value="server">Project</Select.Option>
           </Select>
         </Form.Item>
 
@@ -133,7 +137,8 @@ export const Modal = ({ open, setOpen, selectedData, type = "add" }) => {
           <Select placeholder="Select Priority">
             <Select.Option value="important">Important</Select.Option>
             <Select.Option value="not-so">Not-so</Select.Option>
-            <Select.Option value="urgent">Now</Select.Option>
+            <Select.Option value="now">Now</Select.Option>
+            <Select.Option value="other">Now</Select.Option>
           </Select>
         </Form.Item>
       </Form>
